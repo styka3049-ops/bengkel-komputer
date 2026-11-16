@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Modern</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2 class="logo">MyWebsite</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1>Selamat Datang!</h1>
+            <h2>Di Website Saya</h2>
+            <p>
+                Ini adalah contoh desain website modern
+                menggunakan HTML dan CSS.
+            </p>
+            <a href="#" class="btn">Mulai Sekarang</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 MyWebsite. All Rights Reserved.</p>
+    </footer>
+
+</body>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 8%;
+    background: #1e293b;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e40af
+    );
+}
+
+.content h1 {
+    font-size: 50px;
+    color: #38bdf8;
+}
+
+.content h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e293b;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    .content h1 {
+        font-size: 35px;
+    }
+
+    .content h2 {
+        font-size: 25px;
+    }
+}
+
+</html>
